@@ -1,5 +1,6 @@
 import unittest
 
+
 from textnode import TextNode, TextType
 
 
@@ -39,6 +40,7 @@ class TestTextNode(unittest.TestCase):
         html_node = TextNode.text_node_to_html_node(node)
         self.assertEqual(html_node.tag, "i")
         self.assertEqual(html_node.value, "This is italic text")
+        
     
 
 

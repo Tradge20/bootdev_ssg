@@ -1,6 +1,7 @@
 from enum import Enum
 from htmlnode import LeafNode
 
+
 class TextType(Enum):
     TEXT = "text"
     ITALIC = "italic"
@@ -44,4 +45,10 @@ class TextNode:
             return LeafNode("img", "", {"src": text_node.url, "alt": text_node.text})
         else:
             raise ValueError(f"Unknown TextType: {text_node.text_type}")
+        
+    
+    
+
+
+        
         
